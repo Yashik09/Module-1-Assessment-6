@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Pine City Mall</title>
+<meta name="description" content="Address, hours and a contact form for Pine City Mall.">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2 6 12h3l-4 8h14l-4-8h3L12 2Z" fill="#E4BD82"/><rect x="10.5" y="19" width="3" height="3" fill="#8B6A3F"/></svg>
+      Pine City Mall
+    </a>
+    <nav class="main-nav">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="map.html" class="">Map</a>
+        <a href="shops.html" class="">Shops</a>
+        <a href="movies.html" class="">Movies</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <img src="images/mall-contact.jpg" alt="Pine City Mall entrance">
+  <div class="hero-text">
+    <h1 class="display" style="font-size:28px;">Get in touch</h1>
+  </div>
+</div>
+
+<section>
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2 class="section-title" style="margin-bottom:18px;">Visit or reach us</h2>
+      <div class="info-list">
+        <div class="info-row"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12Z" stroke="#3C6754" stroke-width="1.8"/><circle cx="12" cy="9" r="2.3" stroke="#3C6754" stroke-width="1.8"/></svg></span><div><div class="lbl">Address</div><div class="val">101 Pinetree Avenue, Durban, South Africa 4320</div></div></div>
+        <div class="info-row"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6 3h4l1.5 5-2.5 2a13 13 0 0 0 5 5l2-2.5 5 1.5v4a2 2 0 0 1-2.2 2A17 17 0 0 1 4 6.2 2 2 0 0 1 6 3Z" stroke="#3C6754" stroke-width="1.6" stroke-linejoin="round"/></svg></span><div><div class="lbl">Phone</div><div class="val">(031) 500-001</div></div></div>
+        <div class="info-row"><span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4V5Z" stroke="#3C6754" stroke-width="1.9"/><path d="m4 6 8 7 8-7" stroke="#3C6754" stroke-width="1.9"/></svg></span><div><div class="lbl">Email</div><div class="val">hello@pinecitymall.example</div></div></div>
+      </div>
+      <table class="hours">
+        <tr><td>Monday – Thursday</td><td>9:00 am – 9:00 pm</td></tr>
+        <tr><td>Friday – Saturday</td><td>9:00 am – 10:00 pm</td></tr>
+        <tr><td>Sunday</td><td>10:00 am – 7:00 pm</td></tr>
+      </table>
+    </div>
+
+    <div>
+      <h2 class="section-title" style="font-size:20px; margin-bottom:4px;">Send us a message</h2>
+      <p class="section-desc">Questions, feedback or lost &amp; found — we read every message.</p>
+
+      <div id="contactFormWrap">
+        <form id="contactForm" novalidate>
+          <div class="field" id="f-name">
+            <label for="cf-name">Full name</label>
+            <input type="text" id="cf-name" placeholder="Jordan Riley">
+            <div class="err">Please enter your name.</div>
+          </div>
+          <div class="field" id="f-email">
+            <label for="cf-email">Email address</label>
+            <input type="email" id="cf-email" placeholder="you@example.com">
+            <div class="err">Please enter a valid email address.</div>
+          </div>
+          <div class="field" id="f-subject">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" placeholder="What's this about?">
+            <div class="err">Please add a subject.</div>
+          </div>
+          <div class="field" id="f-message">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" placeholder="Tell us more..."></textarea>
+            <div class="err">Please write a short message.</div>
+          </div>
+          <button type="submit" class="submit-btn">Send message</button>
+        </form>
+      </div>
+
+      <div class="confirm-box" id="confirmBox">
+        <div class="check"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 style="font-size:17px; margin-bottom:6px;">Message sent</h3>
+        <p style="color:var(--fg-muted); font-size:14px;">Thanks for reaching out — our team replies within one business day.</p>
+        <button class="submit-btn" style="margin-top:16px;" onclick="resetForm()">Send another message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>Pine City Mall · 101 Pinetree Avenue, Durban</div>
+    <div>Open daily · <a href="contact.html">Get in touch</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
